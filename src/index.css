@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  font-family: "Abel", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #651f1b;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+h1 {
+  font-family: "Teko", sans-serif;
+  font-size: 45px;
+}
+section {
+  padding-top: 10px;
+}
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #b48c58;
+  border-radius: 5px;
+}
+p {
+  font-size: 18px;
+}

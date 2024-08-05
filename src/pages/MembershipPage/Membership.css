@@ -1,0 +1,18 @@
+.membership-desc {
+  padding: 30px;
+  text-align: center;
+}
+.membership-desc p {
+  font-size: 30px;
+}
+.membership-desc a {
+  border: 1px solid #b48c58;
+  text-decoration: none;
+  padding: 5px 10px;
+  color: #b48c58;
+}
+@media screen and (max-width: 480px) {
+  .membership-desc a {
+    display: block;
+  }
+}

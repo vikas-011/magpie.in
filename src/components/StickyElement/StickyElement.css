@@ -1,0 +1,35 @@
+.sticky-element {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #310606;
+  z-index: 1000;
+  transition: top 0.3s ease-in-out;
+}
+
+.sticky-element.hidden {
+  top: -80px;
+}
+
+.sticky-element nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.sticky-element nav ul li {
+  display: inline;
+  margin: 0 10px; /* Add spacing between list items */
+}
+
+.sticky-element nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+}
+@media only screen and (max-width: 767px) {
+  .sticky-element {
+    display: none;
+  }
+}

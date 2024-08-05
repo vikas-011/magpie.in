@@ -1,0 +1,37 @@
+footer {
+  display: flex;
+  background-color: black;
+  color: white;
+  justify-content: space-between;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+footer li {
+  list-style: none;
+}
+footer div ul li a {
+  text-decoration: none;
+  color: white;
+}
+footer div ul {
+  line-height: 30px;
+}
+footer div ul li p {
+  font-size: 24px;
+}
+.social-media ul li .social-icons a {
+  padding: 10px;
+}
+@media only screen and (max-width: 767px) {
+  .quick-links,
+  .social-media ul li p {
+    display: none;
+  }
+  footer {
+    /* padding: 0; */
+    /* background-color: black; */
+    padding: none;
+    flex-direction: column;
+  }
+}

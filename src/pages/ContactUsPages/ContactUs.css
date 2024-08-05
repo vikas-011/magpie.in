@@ -1,0 +1,71 @@
+.contact-info {
+  width: 98%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-info .left,
+.right {
+  width: 45%;
+}
+
+.left ul li {
+  list-style: none;
+}
+.left ul li p {
+  font-size: 25px;
+}
+
+.contact-info .right form {
+  width: 98%;
+  margin: auto;
+  padding: 25px 7px;
+}
+.contact-info .right form button {
+  cursor: pointer;
+  padding: 7px 20px;
+  background-color: #06d6a0;
+  border: 1px solid #06d6;
+  color: white;
+  display: block;
+  margin: auto;
+
+  /* margin-left: 40px; */
+}
+.contact-info .right form div {
+  width: 95%;
+  margin: auto;
+}
+.contact-info .right form div input,
+textarea,
+button {
+  width: 100%;
+}
+.contact-info .right form div input {
+  height: 30px;
+}
+.contact-info .right form div textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+.map .map-div {
+  width: 95%;
+  margin: auto;
+}
+@media screen and (max-width: 480px) {
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-info .left,
+  .right {
+    width: 100%;
+  }
+  .map .map-div {
+    width: 100%;
+  }
+  .map .map-div iframe {
+    width: 100%;
+  }
+}

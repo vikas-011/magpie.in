@@ -1,0 +1,63 @@
+.room-section h1 {
+  text-align: center;
+}
+.room {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* border: 1px solid; */
+}
+.room .desc {
+  padding: 10px 20px;
+  background-color: #045388;
+  color: white;
+}
+.room .desc p {
+  text-align: left;
+}
+.image {
+  position: relative;
+  margin: auto;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+}
+
+.image-name {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.room-section .view-details {
+  position: absolute;
+  width: 30%;
+  text-align: center;
+  left: 30%;
+  bottom: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.521);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  opacity: 0; /* initially hidden */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* transition added */
+  transform: translateY(100%); /* initial position */
+}
+
+.image:hover .view-details {
+  opacity: 1; /* show on hover */
+  transform: translateY(0); /* slide upward */
+}
+@media only screen and (max-width: 767px) {
+  .room {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
